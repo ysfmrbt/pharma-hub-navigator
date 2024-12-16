@@ -6,9 +6,9 @@ export const DashboardLayout = ({ children }: { children: React.ReactNode }) => 
   const navigate = useNavigate();
 
   const menuItems = [
-    { icon: Pill, label: "Medicines", path: "/dashboard/medicines" },
-    { icon: ClipboardList, label: "Prescriptions", path: "/dashboard/prescriptions" },
-    { icon: UserSquare2, label: "Pharmacists", path: "/dashboard/pharmacists" },
+    { icon: Pill, label: "Médicaments", path: "/dashboard/medicines" },
+    { icon: ClipboardList, label: "Ordonnances", path: "/dashboard/prescriptions" },
+    { icon: UserSquare2, label: "Pharmaciens", path: "/dashboard/pharmacists" },
   ];
 
   return (
@@ -36,7 +36,7 @@ export const DashboardLayout = ({ children }: { children: React.ReactNode }) => 
                       className="flex items-center gap-3 px-4 py-2 hover:bg-red-50 rounded-lg transition-colors text-red-600"
                     >
                       <LogOut className="w-5 h-5" />
-                      <span>Logout</span>
+                      <span>Déconnexion</span>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
                 </SidebarMenu>
